@@ -10,10 +10,9 @@
   function modelReady(){
     classifier.classify(gotResults)
   }
-   function gotResults(error,results){
-    console.log("gotResults")
-   }
-    function gotResult(error,results) {
+   
+   
+    function gotResults(error,results) {
       if(error){ 
           console.error(error)
          
@@ -48,7 +47,7 @@
         img4.src="j2.jpg"
 
       }
-      else if(results[0].label=="estalos"){
+      else if(results[0].label=="estalo"){
         img1.src="neymar.jpg"
         img2.src="j4.jpg"
         img3.src="jogador2.gif"
